@@ -5,5 +5,5 @@ def network_alert_stub(celcius):
     # Return 500 for not-ok
     if(celcius < float(100)):
       return 200
-    else
+    else:
       return 500
