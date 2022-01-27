@@ -2,8 +2,12 @@ import stub_alerter
 
 alert_failure_count = 0
 
-def alert_in_celcius(farenheit):
+def convert_farenheit_to_celcius(farenheit):
     celcius = (farenheit - 32) * 5 / 9
+    return celcius
+    
+def alert_in_celcius(farenheit):
+    celcius = convert_farenheit_to_celcius(farenheit)
     returnCode = stub_alerter.network_alert_stub(celcius)
     if returnCode != 200:
         # non-ok response is not an error! Issues happen in life!
