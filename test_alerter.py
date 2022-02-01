@@ -1,5 +1,5 @@
 import alerter
-import stub_alerter
+from stub_alerter import *
 
 if __name__ == '__main__':
   alerter.alert_in_celcius(400.5,network_not_ok)
