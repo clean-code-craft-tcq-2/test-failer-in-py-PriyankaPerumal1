@@ -57,4 +57,4 @@ assert(format_color_Code('25',',') == '25     , Violet , Slate')
 assert(format_color_Code('9','||') == '9      || Red    || Brown')
 assert(format_color_Code('89','|') == 'Index number not available')
 
-print("All is well (maybe!)\n")
+print("All is well!\n")
