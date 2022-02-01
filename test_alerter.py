@@ -9,4 +9,4 @@ if __name__ == '__main__':
   print(f'{alerter.alert_failure_count} alerts failed.')
   alerter.alert_in_celcius(100,stub_alerter.network_ok)
   assert(alerter.alert_failure_count == 2)
-  print('All is well (maybe!)')
+  print('All is well!')
