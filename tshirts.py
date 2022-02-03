@@ -7,10 +7,12 @@ def size(cms):
     else:
         return 'L'
 
+def test_tshirt_size():
+    assert(size(37) == 'S')
+    assert(size(40) == 'M')
+    assert(size(43) == 'L')
+    assert(size(38) == 'M')
 
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
-assert(size(38) == 'M')
 
+test_tshirt_size()
 print("All is well\n")
