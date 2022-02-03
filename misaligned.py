@@ -45,16 +45,17 @@ def print_color_map(seperator):
     else:
         print("Color code manual is empty!!")
     
+def test_alignment():
+    assert(get_major_color_from_dict('20') == 'Yellow')
+    assert(get_minor_color_from_dict('22') == 'Orange')
+    assert(format_color_Code('1','|')   == '1      | White  | Blue')
+    assert(format_color_Code('6','|')   == '6      | Red    | Blue')
+    assert(format_color_Code('11','|')  == '11     | Black  | Blue')
+    assert(format_color_Code('25',',') == '25     , Violet , Slate')
+    assert(format_color_Code('9','||') == '9      || Red    || Brown')
+    assert(format_color_Code('89','|') == 'Index number not available')
+
 update_color_code_dictionary()
 print_color_map('|')
-
-assert(get_major_color_from_dict('20') == 'Yellow')
-assert(get_minor_color_from_dict('22') == 'Orange')
-assert(format_color_Code('1','|')   == '1      | White  | Blue')
-assert(format_color_Code('6','|')   == '6      | Red    | Blue')
-assert(format_color_Code('11','|')  == '11     | Black  | Blue')
-assert(format_color_Code('25',',') == '25     , Violet , Slate')
-assert(format_color_Code('9','||') == '9      || Red    || Brown')
-assert(format_color_Code('89','|') == 'Index number not available')
-
+test_alignment()
 print("All is well\n")
